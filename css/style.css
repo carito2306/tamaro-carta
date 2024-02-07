@@ -1,0 +1,124 @@
+/* <!-- RESET --> */
+*{
+    font-family: abhaya Libre;
+    list-style: none;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* <!-- MAIN --> */
+
+.logo {
+    width: 35%;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.slogan{
+    font-family: Flaemische Kanzleischrift;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+/* <!-- LISTAS --> */ 
+
+.seccion {
+    margin-bottom: 3rem;
+}
+
+.titulo {
+    font-size: 3.5rem;
+    padding: 4rem;
+    background-color: #969696;
+    color: white;
+}
+
+.subtitulo { 
+    font-size: 3rem;
+}
+
+.lista {
+    font-size: 1.8rem;
+
+}
+
+.aclaracion {
+    font-size: 1.5rem;
+}
+
+.imagen {
+    width: 65%;
+    border-radius: 30%;
+    margin-bottom: 3rem;
+}
+
+/*.parallax {
+    background-image: url(./style.css);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+.bloque {
+    display: grid;
+    grid-template-areas: 
+    1 / 1 / 4
+    2 / 3 / 4
+    2 / 3 / 4;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    /* <!-- display: flex;
+    flex-direction: row;
+    justify-content: space-around; --> */
+
+    padding-top: 3rem;
+}
+
+.extras {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.contacto {
+    background-color: #D71621;
+    display: grid;
+    justify-items: center;
+}
+
+.contactenos{
+    font-size: 3.5rem;
+    padding: 4rem;
+    color: white;
+}
+
+.iconosContacto{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+
+.grupoContactos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.socialmedia{
+    width: 70%;
+    margin: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.map{
+    margin: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
