@@ -1,9 +1,18 @@
 /* <!-- RESET --> */
+
+@font-face {
+    font-family: Abhaya Libre;
+    src: url(../images/AbhayaLibre-Regular.ttf);
+    font-family: Flaemische-Kanzleischrift;
+    src: url(../images/Flaemische-Kanzleischrift.ttf);
+}
+
 *{
-    font-family: abhaya Libre;
+    font-family: Abhaya Libre;
     list-style: none;
     margin: 0;
 }
+
 
 button {
     cursor: pointer;
@@ -20,7 +29,7 @@ button {
 }
 
 .slogan{
-    font-family: Flaemische Kanzleischrift;
+    font-family: Flaemische-Kanzleischrift;
     font-size: 3rem;
     display: flex;
     justify-content: center;
@@ -76,10 +85,6 @@ button {
 
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 1fr;
-    /* <!-- display: flex;
-    flex-direction: row;
-    justify-content: space-around; --> */
-
     padding-top: 3rem;
 }
 
@@ -121,4 +126,26 @@ button {
 .map{
     margin: 1rem;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* <!----- RESPONSIVE ------> */
+
+@media screen and (max-width: 768px) {
+    .slogan{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+        padding: 2rem;
+        background-color: #969696;
+        color: white;
+    }
+
+    .bloque {
+        display: grid;
+        grid-template-columns: 1fr, 2fr, 1fr;
+    
+    }
 }
