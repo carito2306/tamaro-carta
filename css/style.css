@@ -8,9 +8,12 @@
 }
 
 *{
-    font-family: Abhaya Libre;
     list-style: none;
     margin: 0;
+}
+
+body{
+    font-family: Abhaya Libre;
 }
 
 
@@ -43,6 +46,7 @@ button {
 }
 
 .titulo {
+    font-family: Abhaya Libre;
     font-size: 3.5rem;
     padding: 4rem;
     background-color: #969696;
@@ -63,10 +67,11 @@ button {
 }
 
 .imagen {
-    width: 65%;
+    width: 25%;
     border-radius: 30%;
     margin-bottom: 3rem;
 }
+
 
 /*.parallax {
     background-image: url(./style.css);
@@ -76,17 +81,28 @@ button {
     background-size: cover;
 }*/
 
-.bloque {
+/* <!------ GRID -------> */ 
+
+.subtitle{
+    grid-area: subtitle;
+}
+.column1{
+    grid-area: column1;
+}
+.column2{
+    grid-area: column2;
+}
+.column3{
+    grid-area: column3;
+}
+
+.conteiner{
     display: grid;
     grid-template-areas: 
-    1 / 1 / 4
-    2 / 3 / 4
-    2 / 3 / 4;
-
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 1fr;
-    padding-top: 3rem;
+        "subtitle" "subtitle" "subtitle" 
+        "column1"  "column2" "column3";    
 }
+
 
 .extras {
     font-size: 1.8rem;
@@ -143,9 +159,15 @@ button {
         color: white;
     }
 
-    .bloque {
+    .conteiner{
         display: grid;
-        grid-template-columns: 1fr, 2fr, 1fr;
-    
+        grid-template: 
+        "subtitle" "subtitle" 100px
+        "column1"  "column2"  100px
+        "column3"  "column3"  100px;    
+    }
+
+    .imagen {
+        width: 65%;
     }
 }
