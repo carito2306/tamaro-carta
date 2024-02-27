@@ -57,13 +57,13 @@ button {
     font-size: 3rem;
 }
 
+.aclaracion {
+    font-size: 1.5rem;
+}
+
 .lista {
     font-size: 1.8rem;
 
-}
-
-.aclaracion {
-    font-size: 1.5rem;
 }
 
 .imagen {
@@ -83,7 +83,7 @@ button {
 
 /* <!------ GRID -------> */ 
 
-.subtitle{
+/*.subtitle{
     grid-area: subtitle;
 }
 .column1{
@@ -94,14 +94,7 @@ button {
 }
 .column3{
     grid-area: column3;
-}
-
-.conteiner{
-    display: grid;
-    grid-template-areas: 
-        "subtitle" "subtitle" "subtitle" 
-        "column1"  "column2" "column3";    
-}
+}*/
 
 
 .extras {
@@ -159,12 +152,25 @@ button {
         color: white;
     }
 
-    .conteiner{
-        display: grid;
-        grid-template: 
-        "subtitle" "subtitle" 100px
-        "column1"  "column2"  100px
-        "column3"  "column3"  100px;    
+    .listaResponsive{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    
+    .aclaracion {
+        font-size: 1rem;
+    }
+    
+    .lista {
+        font-size: 1.2rem;
+    
+    }
+
+    .extras {
+        font-size: 1.2rem;
+        font-weight: 700;
     }
 
     .imagen {
