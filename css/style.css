@@ -81,22 +81,6 @@ button {
     background-size: cover;
 }*/
 
-/* <!------ GRID -------> */ 
-
-/*.subtitle{
-    grid-area: subtitle;
-}
-.column1{
-    grid-area: column1;
-}
-.column2{
-    grid-area: column2;
-}
-.column3{
-    grid-area: column3;
-}*/
-
-
 .extras {
     font-size: 1.8rem;
     font-weight: 700;
@@ -152,6 +136,10 @@ button {
         color: white;
     }
 
+    .subtitulo { 
+        font-size: 2.5rem;
+    }
+
     .listaResponsive{
         display: flex;
         flex-direction: row;
@@ -175,5 +163,22 @@ button {
 
     .imagen {
         width: 65%;
+    }
+
+    .contactenos{
+        font-size: 2rem;
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .iconosContacto{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .mapResponsive{
+        width: 80%;
+        margin-left: 10%;
     }
 }
