@@ -165,10 +165,27 @@ button {
         width: 65%;
     }
 
+    .column1{
+        max-width: 60%;
+    }
+
+    .column2{
+        max-width: 30%;
+    }
+
+    .price{
+        min-width: 20%;
+    }
+
     .contactenos{
         font-size: 2rem;
         padding: 0.5rem;
         margin-top: 2rem;
+    }
+
+    .socialmedia {
+        width: 90%;
+        margin: 0.5rem;
     }
 
     .iconosContacto{
