@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: AbhayaLibre-Regular;
-    src: url(../images/AbhayaLibre-Regular.ttf);
+    src: url(../images/AbhayaLibre-Regular.ttf) format('truetype');
     font-family: Flaemische-Kanzleischrift;
     src: url(../images/Flaemische-Kanzleischrift.ttf);
 }
