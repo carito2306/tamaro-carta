@@ -1,7 +1,7 @@
 /* <!-- RESET --> */
 
 @font-face {
-    font-family: Abhaya Libre;
+    font-family: AbhayaLibre-Regular;
     src: url(../images/AbhayaLibre-Regular.ttf);
     font-family: Flaemische-Kanzleischrift;
     src: url(../images/Flaemische-Kanzleischrift.ttf);
@@ -66,6 +66,13 @@ button {
 
 }
 
+.listaResponsive{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
 .imagen {
     width: 25%;
     border-radius: 30%;
@@ -84,6 +91,14 @@ button {
 .extras {
     font-size: 1.8rem;
     font-weight: 700;
+}
+
+.aclaracionRav {
+    display: none;
+}
+
+.aclaracionEmp {
+    display: none;
 }
 
 .contacto {
@@ -123,7 +138,7 @@ button {
 
 /* <!----- RESPONSIVE ------> */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .slogan{
         font-size: 2rem;
         padding-bottom: 1rem;
@@ -146,6 +161,10 @@ button {
         font-size: 2.5rem;
     }
 
+    ul{
+        padding-left: 0%;
+    }
+
     .listaResponsive{
         display: flex;
         flex-direction: row;
@@ -155,6 +174,15 @@ button {
     
     .aclaracion {
         font-size: 1rem;
+    }
+
+    .aclaracionRav {
+        display: none;
+    }
+
+    .aclaracionEmp {
+        display: inline;
+        margin-bottom: 5%;
     }
     
     .lista {
@@ -203,5 +231,12 @@ button {
     .mapResponsive{
         width: 80%;
         margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .aclaracionRav {
+        display: inline;
+        margin-bottom: 0%;
     }
 }
